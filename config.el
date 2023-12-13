@@ -37,7 +37,7 @@
      projectile-project-search-path '("~/code/")
       )
 
-(setq projectile-project-search-path '("~/code/"))
+;; (setq projectile-project-search-path '("~/code/"))
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
@@ -56,3 +56,7 @@
 ;; they are implemented.
 
 ;;(global-visual-line-mode t)
+;; (font-spec :family "Fira Code Retina" :weight `medium :size 15.0)
+ 
+(add-to-list 'load-path "~/code/emacs-libvterm")
+(setq doom-font (font-spec :family "Fira Code" :weight `medium :size 16))

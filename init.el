@@ -49,6 +49,8 @@
        ;;hydra
        indent-guides     ; highlighted indent columns
        ligatures         ; ligatures and symbols to make your code pretty again
+       (ligatures +extra +fira)
+
        ;;minimap           ; show a map of the code on the side
        modeline          ; snazzy, Atom-inspired modeline, plus API
        ;;nav-flash         ; blink cursor line after big motions
@@ -81,7 +83,7 @@
        :emacs
        dired             ; making dired pretty [functional]
        electric          ; smarter, keyword-based electric-indent
-       ;;ibuffer         ; interactive buffer management
+       ;; ibuffer         ; interactive buffer management
        undo              ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
 
@@ -92,8 +94,8 @@
        vterm             ; the best terminal emulation in Emacs
 
        :checkers
-       syntax              ; tasing you for every semicolon you forget
-       ;;(spell +flyspell) ; tasing you for misspelling mispelling
+       ;; syntax              ; tasing you for every semicolon you forget
+       (spell +flyspell) ; tasing you for misspelling mispelling
        ;;grammar           ; tasing grammar mistake every you make
 
        :tools
@@ -145,7 +147,7 @@
        ;;fstar             ; (dependent) types and (monadic) effects and Z3
        ;;gdscript          ; the language you waited for
        ;;(go +lsp)         ; the hipster dialect
-       ;;(haskell +lsp)    ; a language that's lazier than I am
+       (haskell +lsp)    ; a language that's lazier than I am
        ;;hy                ; readability of scheme w/ speed of python
        ;;idris             ; a language you can depend on
        json              ; At least it ain't XML
@@ -180,8 +182,8 @@
        ;;solidity          ; do you need a blockchain? No.
        ;;swift             ; who asked for emoji variables?
        ;;terra             ; Earth and Moon in alignment for performance.
-       ;;web               ; the tubes
-       ;;yaml              ; JSON, but readable
+       web               ; the tubes
+       yaml              ; JSON, but readable
        ;;zig               ; C, but simpler
 
        :email
@@ -203,4 +205,3 @@
 
 ;; ============================ custom
 ;;
-
